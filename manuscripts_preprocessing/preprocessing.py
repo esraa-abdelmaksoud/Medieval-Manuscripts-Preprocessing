@@ -91,37 +91,6 @@ def draw_bound(image, res, path, fname):
     return image_bound
 
 
-def tess_ocr(image, path, fname):
-    """
-    Performs OCR on the image using Tesseract.
-    Parameters:
-        image (ndarray): The image to be processed.
-    Returns:
-        image (ndarray): The image with text boundings.
-    """
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
-
-    df = pytesseract.image_to_data(
-        gray, lang="hye", config="--psm 12", output_type="data.frame"
-    )
-    # df.to_csv('{path}/{fname[:-5]}.csv')
-    max_level = max(df["level"])
-
-    # Drawing rectangles around recognized text based on level
-    for i in range(1, len(df)):
-        if df["level"][i] == max_level:
-            (x, y, w, h) = (
-                df["left"][i],
-                df["top"][i],
-                df["width"][i],
-                df["height"][i],
-            )
-            image = cv2.rectangle(image, (x, y), (x + w, y + h), (255, 0, 0), 1)
-
-    cv2.imwrite(f"{path}/output/seg-{fname}", image)
-    return image
-
-
 def paddle_ocr(image):
     """
     Performs OCR on the image using PaddleOCR.
@@ -201,3 +170,33 @@ def quantize_colors(image, path, fname):
 
     cv2.imwrite(f"{path}/output/quantization-{fname}", result2)
     return result2
+
+
+def tess_ocr(image, path, fname):
+    """
+    Performs OCR on the image using Tesseract.
+    Parameters:
+        image (ndarray): The image to be processed.
+    Returns:
+        image (ndarray): The image with text boundings.
+    """
+    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+
+    df = pytesseract.image_to_data(
+        gray, lang="hye", config="--psm 12", output_type="data.frame"
+    )
+    max_level = max(df["level"])
+
+    # Drawing rectangles around recognized text based on level
+    for i in range(1, len(df)):
+        if df["level"][i] == max_level:
+            (x, y, w, h) = (
+                df["left"][i],
+                df["top"][i],
+                df["width"][i],
+                df["height"][i],
+            )
+            image = cv2.rectangle(image, (x, y), (x + w, y + h), (255, 0, 0), 1)
+
+    cv2.imwrite(f"{path}/output/tess-{fname}", image)
+    return image
