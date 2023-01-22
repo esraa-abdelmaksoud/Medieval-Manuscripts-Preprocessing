@@ -21,4 +21,4 @@ In order to classify the fonts or the handwritings of manuscripts to know the au
 
 ## PaddleOCR Text Detection
 
-<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/paddle-bound-1669902888704.jpeg" width="40%" height="40%">
+<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/paddle-bound-1669902888704.jpeg" width="40%" height="40%">
