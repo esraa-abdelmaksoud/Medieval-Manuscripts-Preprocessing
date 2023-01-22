@@ -11,9 +11,9 @@ In order to classify the fonts or the handwritings of manuscripts to know the au
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/1669902888704.jpeg" width="40%" height="40%">
 
-## Cropping vs Edge Detection
+## Cropping
 
-<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/cropped-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/canny-300-500-1669902888704.jpeg" width="40%" height="40%">
+<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/cropped-1669902888704.jpeg" width="40%" height="40%">
 
 ## Thresholding vs Quantization
 
