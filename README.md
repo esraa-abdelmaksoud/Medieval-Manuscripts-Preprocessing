@@ -35,6 +35,8 @@ In order to fill the gaps in handwritings, opening morphological operations are 
 
 Though Tesseract is one of the preferred open-source OCR packages that contains several page segmentation modes, it sometimes fails in detecting some text. It also uses OTSU binarization internally, so it misses text in colors that are close to the background color. It also may miss text in the detection process during segmentation issues. Furthermore, it may consider parts of drawings as text mistakenly.
 
-In contrast, PaddleOCR works without binarizing images internally. It is superior in terms of text detection, and usually avoids problematic cropping if text overlaps in conscutive lines. In other words, some pixels of the manuscript image can be considered as a part of two lines and are not exclusively assignment to a single detected text line.
+In contrast, PaddleOCR works without binarizing images internally. It is superior in terms of text detection, and usually avoids problematic cropping if text overlaps in conscutive lines. In other words, some pixels of the manuscript image can be considered as a part of two lines and are not exclusively assigned to a single detected text line. This is to reduce the loss of text that should be as clean as possible to classify fonts.
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/paddle-bound-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/tess-1669902888704.jpeg" width="40%" height="40%">
+
+The details above illustrate some analysis for how manuscript images can be initially pre-processed using OpenCV to improve future font classification results.
