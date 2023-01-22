@@ -19,6 +19,6 @@ In order to classify the fonts or the handwritings of manuscripts to know the au
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/thresh-1669902888704.jpeg" width="40%" height="40%">
 
-## PaddleOCR Text Detection
+## PaddleOCR vs Tesseract Text Detection
 
-<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/paddle-bound-1669902888704.jpeg" width="40%" height="40%">
+<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/paddle-bound-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/tess-1669902888704.jpeg" width="40%" height="40%">
