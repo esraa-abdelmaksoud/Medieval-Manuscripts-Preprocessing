@@ -11,13 +11,16 @@ In order to classify the fonts or the handwritings of manuscripts to know the au
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/1669902888704.jpeg" width="40%" height="40%">
 
-## Cropping
+## Cropping vs Edge Detection
 
-<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/cropped-1669902888704.jpeg" width="40%" height="40%">
+<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/cropped-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/canny-300-500-1669902888704.jpeg" width="40%" height="40%">
 
 ## Thresholding vs Quantization
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/thresh-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/quantization-1669902888704.jpeg" width="40%" height="40%">
+
+## Morphological Operations
+<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/opening-1669902888704.jpeg" width="40%" height="40%">
 
 ## PaddleOCR vs Tesseract Text Detection
 
