@@ -39,4 +39,4 @@ In contrast, PaddleOCR works without binarizing images internally. It is superio
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/paddle-bound-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/tess-1669902888704.jpeg" width="40%" height="40%">
 
-The details above illustrate some analysis for how manuscript images can be initially pre-processed using OpenCV to improve future font classification results.
+The details above illustrate some analysis for how historical manuscript images can be initially pre-processed using OpenCV to improve future font classification results.
