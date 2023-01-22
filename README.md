@@ -15,9 +15,9 @@ In order to classify the fonts or the handwritings of manuscripts to know the au
 
 <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/cropped-1669902888704.jpeg" width="40%" height="40%">
 
-## Thresholding
+## Thresholding vs Quantization
 
-<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/thresh-1669902888704.jpeg" width="40%" height="40%">
+<img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/thresh-1669902888704.jpeg" width="40%" height="40%"> <img src="https://github.com/esraa-abdelmaksoud/Medieval-Manuscripts-Preprocessing/blob/main/output/quantization-1669902888704.jpeg" width="40%" height="40%">
 
 ## PaddleOCR vs Tesseract Text Detection
 
