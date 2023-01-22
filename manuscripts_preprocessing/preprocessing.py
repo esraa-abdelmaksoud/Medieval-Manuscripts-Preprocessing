@@ -180,10 +180,12 @@ def tess_ocr(image, path, fname):
     Returns:
         image (ndarray): The image with text boundings.
     """
-    gray = cv2.cvtColor(image, cv2.COLOR_BGR2GRAY)
+    # Check if image is threshed, convert it to BGR
+    if len(image.shape) == 2:
+        image = cv2.cvtColor(image, cv2.COLOR_GRAY2BGR)
 
     df = pytesseract.image_to_data(
-        gray, lang="hye", config="--psm 12", output_type="data.frame"
+        image, lang="hye", config="--psm 12", output_type="data.frame"
     )
     max_level = max(df["level"])
 
